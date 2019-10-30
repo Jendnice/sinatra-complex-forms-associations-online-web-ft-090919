@@ -36,6 +36,7 @@ class PetsController < ApplicationController
     # if !params[:owner].keys.include?("pet_ids")
     #   params[:owner]["pet_ids"] = []
     # end 
+    binding.pry 
    
     @pet = Pet.find(params[:id])
     # @pet.update(params[:pet][:owner_id])
