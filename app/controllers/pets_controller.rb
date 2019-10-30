@@ -50,7 +50,9 @@ class PetsController < ApplicationController
   
 end
 
-
+@pet = Pet.find(params[:id])
+@pet.owner_id = params[:pet][:owner_id]
+@pet.save
 
 
 
